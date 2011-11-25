@@ -1,0 +1,136 @@
+/* Login Container */
+#loginContainer {
+   position: relative;
+   float: right;
+   font-size: 14px;
+}
+
+/* Login Button */
+#loginButton, #logoutButton { 
+   position: relative;
+   float: right;
+   display: inline-block;
+   cursor: pointer;
+   border-radius: 4px;
+   -moz-border-radius: 4px;
+   -webkit-border-radius: 4px;
+}
+
+/* Login Button Text */
+#loginButton span, #logoutButton span {
+   display: block;
+   text-decoration: none;
+   padding: 2px 8px 2px 8px;
+}
+
+#loginButton:hover, #logoutButton:hover {
+   background: #ddd;
+   text-decoration: none;
+}
+
+/* Login Box */
+#loginBox {
+   clear: both;
+   position: absolute;
+   display: none;
+   top: 26px;
+   right: 0;
+}
+
+/* If the Login Button has been clicked */    
+#loginButton.active, #loginButton.active:hover {
+    background: #fff;
+    border-radius: 4px 4px 0 0;
+}
+
+/* Login Form */
+#loginForm {
+   width: 240px; 
+   padding: 6px;
+   border: 1px solid;
+   border-radius: 4px;
+   -moz-border-radius: 4px;
+}
+
+#loginForm fieldset {
+   text-align: left;
+   margin: 0 0 12px 0;
+   display: block;
+   border: 0;
+   padding: 0;
+}
+
+fieldset#body {
+   padding: 10px 13px;
+   margin: 0;
+   border-radius: 4px;
+   -moz-border-radius: 4px;
+}
+
+#loginForm #checkbox {
+   width: auto;
+   margin: 1px 9px 0 0;
+   float: left;
+   padding: 0;
+   border: 0;
+}
+
+#body label {
+   display: block;
+   float:left;
+   color: #3a454d;
+   margin: 9px 0 0 0;
+}
+
+#loginForm #body fieldset label {
+   display: block;
+   float: none;
+   margin: 0 0 6px 0;
+}
+
+/* Default Input */
+#loginForm input {
+   width: 92%;
+   border: 1px solid;
+   color: #3a454d;
+   font-weight: bold;
+   padding: 8px 8px;
+   box-shadow: inset 0px 1px 3px #bbb;
+   border-radius: 4px;
+   -moz-border-radius: 4px;
+   -webkit-box-shadow: inset 0px 1px 3px #bbb;
+   -moz-box-shadow:inset 0px 1px 3px #bbb;
+}
+
+/* Sign In Button */
+#loginForm #login {
+   width: auto;
+   float: left;
+   background: #999;
+   padding: 7px 10px 8px 10px;
+   box-shadow: none;
+   -moz-box-shadow: none;
+   -webkit-box-shadow: none;
+   margin:0 12px 0 0;
+   cursor:pointer;
+}
+
+#loginForm #login:hover {
+    background: #666;
+}
+
+/* Forgot your password */
+#loginForm span {
+   display: block;
+   /*text-align: center;*/
+   text-align: left;
+   padding: 7px 0 4px 0;
+}
+
+#loginForm span a {
+   color: #3a454d;
+}
+
+input:focus {
+   outline:none;
+}

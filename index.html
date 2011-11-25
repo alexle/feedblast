@@ -1,0 +1,64 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <title>FeedBlast! - A New Way To Read Your Feeds</title>
+
+   <head>
+      <script type="text/javascript" src="https://www.google.com/jsapi?key=ABQIAAAAM2UytaEFhHn5y54UkEpndBSOzjIHE7NyxBnJQzMPciZ_6TheZRTZOOKYwfEEGxqo0ciIPtQik3A__Q"></script>
+      <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.4.js"></script>
+
+      <script type="text/javascript" src="http://connect.facebook.net/en_US/all.js"></script>
+      <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+      <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+      
+      <link href="css/index.css" rel="stylesheet" type="text/css">
+
+		<link href="css/selectbox.css" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="javascript/jquery-1.5.1.min.js"></script>
+		<script type="text/javascript" src="javascript/jquery.selectbox-0.1.3.js"></script>
+
+      <script type="text/javascript">
+         $(function () {
+            $("#lang").selectbox();
+         });
+
+         $(function () {
+            $("#feed_select").selectbox();
+         });
+      </script>
+   </head>   
+
+
+   <body>
+      <div id="wrapper">
+
+         <div id="header">
+            <h1>FeedBlast!</h1><sub>..a new way to read your feeds</sub>
+         </div>
+
+         <div id="login">
+            <a href="{{ url }}"><img src="images/google2.jpg" style="vertical-align:middle"></a>
+         </div>
+
+      </div>
+
+      <div id="footer">
+         &copy; 2011 FeedBlast &nbsp;|
+         <a href="about">About</a> &nbsp;|
+         <a href="#">Disclaimer</a> &nbsp;|
+         &nbsp;A project by <a href="http:\\alextrle.blogspot.com" target="_blank">Alex Le</a><br><br>
+         <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="alextrle">Tweet</a>
+         &nbsp;&nbsp;<g:plusone size="medium"></g:plusone>
+         <script type="text/javascript">
+         (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+         })();
+         </script>
+               
+         <iframe src="http://www.facebook.com/plugins/like.php?app_id=235529029797252&amp;href=http%3A%2F%2Ffeedblast.appspot.com&amp;send=false&amp;layout=button_count&amp;width=90&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:50px; height:21px;" allowTransparency="true"></iframe>
+      </div>
+
+   </body>
+</html>
