@@ -16,7 +16,7 @@ function SplitFeed( string, option )
    {
       trans_sentences = string.match( /[^.!?;,]+[.!?;,]*/g );
 
-      ReplaceDuplicateComma( );
+      //ReplaceDuplicateComma( );
    }
 }
 
