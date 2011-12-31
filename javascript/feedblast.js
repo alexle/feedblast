@@ -154,8 +154,8 @@ function ParseFeed( lang ) {
          SplitFeed( feed_string, 0 );
 
          // Translate feed
-         //trans_feed_string = TranslateFeed( feed_string, lang );
-         trans_feed_string = TranslateFeed( sentences, lang );
+         trans_feed_string = TranslateFeed( feed_string, lang );
+         //trans_feed_string = TranslateFeed( sentences, lang );
       }
    });
 }

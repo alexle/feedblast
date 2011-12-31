@@ -43,11 +43,19 @@ hr {
    font-family: Georgia;
    font-size: 18px;
 }
+#header-middle{
+   float: left;
+   width: 30%;
+   text-align: right;
+   font-family: Georgia;
+   font-size: 16px;
+}
 #header-right {
    float: right;
-   width: 50%;
+   width: 20%;
    text-align: right;
    position: relative;
+   bottom: 6px;
    font-family: Georgia;
 }
 #content-left {
@@ -99,8 +107,7 @@ hr {
    position: relative;
    font-size: 12px;
    float: right;
-   margin-right: 30px;
-   top: 8px;
+   top: 9px;
 }
 #link_box a:link, #link_box a:visited, #link_box a:hover {
    color: #2B60DE;

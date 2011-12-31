@@ -21,17 +21,21 @@
          <div id="header-left">
             <a href="/"><h1>FeedBlast!</h1><sub>..a new way to read your feeds</sub></a>
          </div>
-
+         <div id="header-middle">
+            Choose a feed.<br>
+            Choose a language. Blast it!
+         </div>
          <div id="header-right">
             <button class='button next' onclick="PrintNextWord()">Next 7</button>
 
-            <!-- Google login -->
+            <!-- Google login (disable for now)
             {% if user.nickname %}
-            <!-- {{ user.nickname }} | -->
+               <!-- {{ user.nickname }} | -->
                <a href="{{ url }}" class="button goo">Sign out</a>
             {% else %}
                <a href="{{ url }}" class="button goo">Sign in</a>
             {% endif %}
+            -->
          </div>
       </div>
 
@@ -40,7 +44,17 @@
       <div id="bottom-wrapper">
 
          <div id="content-left">
-            Language<hr>
+            1. Feed<div id="link_box"></div><hr>
+            <!-- Feed option -->
+            <select id='feed_select' onchange='ParseFeed()'>
+               <option value="http://feeds.feedburner.com/typepad/sethsmainblog">Seth Godin</option>
+               <option value="http://feeds.feedburner.com/codinghorror/">Coding Horror</option>
+               <option value="http://feeds.feedburner.com/zenhabits">Zen Habits</option>
+               <option value="http://www.blogmaverick.com/feed">Mark Cuban</option>
+            </select>
+            <br><br>
+
+            2. Language<hr>
             <!-- Language option -->
             <select id="lang_select" onchange="TranslateFeed()">
                <option value="vi">Vietnamese</option>
@@ -56,17 +70,6 @@
                <option value="ko">Korean</option>
                <option value="pt">Portuguese</option>
                <option value="da">Danish</option>
-            </select>
-
-            <br><br>
-
-            Feed<div id="link_box"></div><hr>
-            <!-- Feed option -->
-            <select id='feed_select' onchange='ParseFeed()'>
-               <option value="http://feeds.feedburner.com/typepad/sethsmainblog">Seth Godin</option>
-               <option value="http://feeds.feedburner.com/codinghorror/">Coding Horror</option>
-               <option value="http://feeds.feedburner.com/zenhabits">Zen Habits</option>
-               <option value="http://www.blogmaverick.com/feed">Mark Cuban</option>
             </select>
 
 
